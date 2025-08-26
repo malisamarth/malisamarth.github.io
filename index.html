@@ -3,41 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mali Samarth | Portfolio</title>
+  <title>Samarth Mali</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #333; color: #fff; padding: 20px; text-align: center; }
-    .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; margin-top: 20px; }
-    h1, h2 { color: #333; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 15px; margin-top: 20px; background: #333; color: #fff; }
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      color: #666;
+      font-size: 1rem;
+    }
+    nav {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 1rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #000;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>👋 Hi, I’m Mali Samarth</h1>
-    <p>Welcome to my portfolio site</p>
+    <h1>Samarth Mali</h1>
+    <p>Tech enthusiast • Learner • Builder</p>
   </header>
 
-  <div class="container">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I’m a tech enthusiast working on Unity, C++, web projects and more. This is my simple portfolio hosted on GitHub Pages.</p>
+    <p>Hello! I’m Samarth, a tech enthusiast who loves coding, building projects, and learning new technologies. This is my minimal personal website.</p>
+  </section>
 
+  <section id="projects">
     <h2>Projects</h2>
+    <p>Some of the things I’ve been working on:</p>
     <ul>
-      <li>🎮 Unity Game Project</li>
-      <li>⚙️ C++ Sorting Algorithms</li>
-      <li>📖 Blog Posts (coming soon)</li>
+      <li>🌐 TerraStudent – A student social platform</li>
+      <li>🎮 Roblox Game Development</li>
+      <li>💡 Electronics circuits & PCB projects</li>
     </ul>
+  </section>
 
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/malisamarth">github.com/malisamarth</a></p>
-  </div>
+    <p>You can reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/SamarthMali" target="_blank">@SamarthMali</a></p>
+  </section>
 
   <footer>
-    <p>© 2025 Mali Samarth | Powered by GitHub Pages</p>
+    <p>© 2025 Samarth Mali</p>
   </footer>
 </body>
 </html>
