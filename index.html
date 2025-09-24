@@ -2,210 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samarth Mali | debuggeddream</title>
-    <style>
-        /* ==== Reset & Base ==== */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samarth Mali | debuggeddream</title>
+  <style>
+    /* ==== Reset & Base ==== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
 
-        a {
-            color: #66d9ef;
-            text-decoration: none;
-            transition: 0.3s ease;
-        }
+    a {
+      color: #66d9ef;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
 
-        a:hover {
-            color: #ffdd57;
-        }
+    a:hover {
+      color: #ffdd57;
+    }
 
-        /* ==== Container ==== */
-        .container {
-            width: 100%;
-            max-width: 900px;
-            backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(17, 25, 40, 0.75);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.125);
-            padding: 2.5rem;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 1.2s ease;
-        }
+    /* ==== Container ==== */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      padding: 2.5rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease;
+    }
 
-        /* ==== Header ==== */
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+    /* ==== Header ==== */
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
 
-        header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
 
-        header p {
-            font-size: 1.1rem;
-            color: #bbb;
-            margin-top: 0.3rem;
-        }
+    header p {
+      font-size: 1.1rem;
+      color: #bbb;
+      margin-top: 0.3rem;
+    }
 
-        /* ==== Nav ==== */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
+    /* ==== Nav ==== */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
 
-        nav a {
-            font-weight: 500;
-            font-size: 1rem;
-            padding: 0.3rem 0.6rem;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
+    nav a {
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
 
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
 
-        /* ==== Sections ==== */
-        section {
-            margin-bottom: 3rem;
-        }
+    /* ==== Sections ==== */
+    section {
+      margin-bottom: 3rem;
+    }
 
-        section h2 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 0.5rem;
-        }
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.5rem;
+    }
 
-        section p,
-        li {
-            font-size: 1.05rem;
-            color: #ddd;
-        }
+    section p,
+    li {
+      font-size: 1.05rem;
+      color: #ddd;
+    }
 
-        ul {
-            margin-top: 0.5rem;
-            padding-left: 1.2rem;
-        }
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+    li {
+      margin-bottom: 0.5rem;
+    }
 
-        /* ==== Game Previews ==== */
-        iframe {
-            display: block;
-            margin: 1rem auto;
-            border-radius: 12px;
-            border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease;
-        }
+    /* ==== Article Section ==== */
+    .article-container {
+      margin-bottom: 3rem;
+    }
 
-        iframe:hover {
-            transform: scale(1.02);
-        }
+    .article {
+      margin-bottom: 2rem;
+      background-color: rgba(30, 40, 50, 0.85);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
 
-        /* ==== Footer ==== */
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #999;
-            margin-top: 1rem;
-        }
+    .article h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffdd57;
+    }
 
-        /* ==== Animations ==== */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
+    .article p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    .article .date {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
 
-        /* ==== Responsive ==== */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
+    /* ==== Modal ==== */
+.modal {
+      display: none; /* Changed from 'flex' to 'none' to hide it initially */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 3rem 1rem;
+    }
 
-            .container {
-                padding: 1.5rem;
-            }
+    .modal-content {
+      background: #1e2832;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 90vw;
+      width: 100%;
+      color: #fff;
+      position: relative;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+      margin: 2rem 1rem;
+      overflow-wrap: break-word;
+    }
 
-            iframe {
-                width: 100%;
-                height: 160px;
-            }
-        }
+    .modal-content h3 {
+      font-size: 2rem;
+      color: #ffdd57;
+      margin-bottom: 1.5rem;
+    }
 
-        /* ==== Left Align Preview Projects ==== */
-        #preview_projects {
-            text-align: left;
-        }
+    .modal-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
 
-        #preview_projects iframe {
-            display: block;
-            margin: 1rem 0;
-        }
-    </style>
+    .modal-content .date {
+      font-size: 1rem;
+      color: #aaa;
+      margin-top: 1rem;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1.5rem;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* ==== Footer ==== */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 1rem;
+    }
+
+    /* ==== Animations ==== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ==== Responsive ==== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+
+      iframe {
+        width: 100%;
+        height: 160px;
+      }
+
+      .article h3 {
+        font-size: 1.5rem;
+      }
+
+      .modal-content h3 {
+        font-size: 1.7rem;
+      }
+
+      .modal-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Samarth Mali</h1>
-            <p>Alias: debuggeddream</p>
-            <p>Tech Enthusiast • Learner • Builder</p>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Samarth Mali</h1>
+      <p>Alias: debuggeddream</p>
+      <p>Tech Enthusiast • Learner • Builder</p>
+    </header>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I’m Samarth, a tech enthusiast who loves debugging, building games, and exploring new technologies
-                like Computer Graphics. This is my personal space on the web.</p>
-        </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Samarth, a tech enthusiast who loves debugging, building games, and exploring new technologies like
+        Computer Graphics. This is my personal space on the web.</p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of my favorite projects:</p>
-            <ul>
-                <li>🎮 <strong>DumbHell</strong> — A game where you control a Dumbbell and manage breathing mechanics.</li>
-                <li>🎮 <strong>Block Breaker</strong> — My first Unity game!</li>
-                <li>💡 <strong>OpenGL</strong> — Learning shaders and computer graphics programming.</li>
-            </ul>
-        </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of my favorite projects:</p>
+      <ul>
+        <li>🎮 <strong>DumbHell</strong> — A game where you control a Dumbbell and manage breathing mechanics.</li>
+        <li>🎮 <strong>Block Breaker</strong> — My first Unity game!</li>
+        <li>💡 <strong>OpenGL</strong> — Learning shaders and computer graphics programming.</li>
+      </ul>
+      
+    </section>
 
         <section id="preview_projects">
             <h2>Play My Games</h2>
@@ -219,18 +306,91 @@
                     debuggeddream</a></iframe>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:samarthmali880@gmail.com">samarthmali880@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/malisamarth" target="_blank">malisamarth</a></p>
-            <p>Itch: <a href="https://debuggeddream.itch.io/" target="_blank">debuggeddream</a></p>
-            <p>Discord: @sumearthy</a></p>
-        </section>
+    <section id="articles" class="article-container">
+      <h2>Articles</h2>
+      <div id="article-list"></div>
+    </section>
 
-        <footer>
-            <p>© 2025 Samarth Mali </p>
-        </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:samarthmali880@gmail.com">samarthmali880@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/malisamarth" target="_blank">malisamarth</a></p>
+      <p>Itch: <a href="https://debuggeddream.itch.io/" target="_blank">debuggeddream</a></p>
+      <p>Discord: @sumearthy</p>
+    </section>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h3 id="modal-title"></h3>
+      <img id="modal-image" alt="" />
+      <p id="modal-content"></p>
+      <p class="date" id="modal-date"></p>
     </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Samarth Mali</p>
+  </footer>
+
+  <script>
+    async function loadArticles() {
+      try {
+        const res = await fetch('articles.json');
+        const articles = await res.json();
+
+        const container = document.getElementById('article-list');
+        container.innerHTML = ''; // Clear before adding
+
+        articles.forEach(article => {
+          const div = document.createElement('div');
+          div.className = 'article';
+          div.onclick = () => openModal(article);
+
+          div.innerHTML = `
+            <h3>${article.title}</h3>
+            <p>${article.content.substring(0, 100)}...</p>
+            <p class="date">Published on: ${article.date}</p>
+          `;
+
+          container.appendChild(div);
+        });
+      } catch (err) {
+        console.error('Failed to load articles:', err);
+        document.getElementById('article-list').innerHTML = '<p>Could not load articles.</p>';
+      }
+    }
+
+    function openModal(article) {
+      document.getElementById('modal-title').textContent = article.title;
+      document.getElementById('modal-content').textContent = article.content;
+      document.getElementById('modal-date').textContent = `Published on: ${article.date}`;
+
+      const imgEl = document.getElementById('modal-image');
+      if (article.image) {
+        imgEl.src = article.image;
+        imgEl.alt = article.title + ' image';
+        imgEl.style.display = 'block';
+      } else {
+        imgEl.style.display = 'none';
+      }
+
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    window.onclick = function (e) {
+      if (e.target.id === 'modal') closeModal();
+    };
+
+    loadArticles();
+  </script>
 </body>
 
 </html>
