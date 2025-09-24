@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Building Games with Unity",
+    "content": "Unity has been my go-to engine for learning the basics of game development. In this article, I’ll walk through how I built my first game, Block Breaker, using C# and Unity’s physics engine. I also discuss the challenges I faced while designing game mechanics and polish.",
+    "date": "September 2025",
+    "image": "images/unity.jpg"
+  },
+  {
+    "title": "Exploring OpenGL Shaders",
+    "content": "Shaders are the heart of real-time rendering. In this post, I dive into how I started working with GLSL, the different types of shaders (vertex, fragment), and how to write custom lighting effects for 3D models using OpenGL.",
+    "date": "August 2025",
+    "image": "images/opengl.jpg"
+  }
+]
